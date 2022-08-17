@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time face detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(22, 24, 23);
+        }
+        canvas {
+            position: absolute;
+        }
+        video {
+            border-top: 20px dotted rgb(255, 35, 64);
+            border-bottom: 20px dotted rgb(94, 35, 255);
+            border-radius: 10%;
+            border-left: 20px dotted rgb(255, 35, 64);
+            border-right: 20px dotted rgb(94, 35, 255);
+        }
+
+    </style>
+    <script src="face-api.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <video id="video" width="720" height="560" autoplay muted></video>
+</body>
+</html>
